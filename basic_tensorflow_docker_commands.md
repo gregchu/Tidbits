@@ -6,14 +6,14 @@ Detach
 `ctrl-p+ctrl-q`
 
 Reattach
-`sudo docker run -it -v ~/:/root CONTAINER_ID /bin/bash
+`docker attach CONTAINER_NAME`
 
 List containers
-`docker ps -l`
+`docker ps`
 
 Save state of container
 where CONTAINER_NAME is made up
 
 Remove docker containers
 
-``docker rm `docker ps --no-trunc -aq```
+``docker rm `docker ps --no-trunc -aq` ``
