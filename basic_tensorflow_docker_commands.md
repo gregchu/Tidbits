@@ -17,3 +17,6 @@ where CONTAINER_NAME is made up
 Remove docker containers
 
 ``docker rm `docker ps --no-trunc -aq` ``
+
+to list last used container
+``docker ps -l -q``
