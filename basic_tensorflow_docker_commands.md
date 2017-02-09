@@ -17,9 +17,17 @@ List containers
 Commit container changes to docker image
 
 
-Remove docker containers
+Stop or kill container
+
+``docker stop/kill CONTAINER NAME``
+
+Remove all docker containers
 
 ``docker rm `docker ps --no-trunc -aq` ``
+
+Remove a docker container
+
+``docker rm CONTAINER_NAME``
 
 to list last used container
 
