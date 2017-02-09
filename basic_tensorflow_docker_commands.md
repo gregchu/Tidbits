@@ -1,4 +1,4 @@
-Pull ubuntu image, then run and mount ~/ to /root
+Image->Container: pull ubuntu image, then run and mount ~/repo to /root/repo
 
 `sudo docker run -it -v ~/repo:/root/repo ubuntu /bin/bash`
 
@@ -10,12 +10,17 @@ Reattach
 
 `docker attach CONTAINER_NAME`
 
+Start
+
+`docker start CONTAINER_NAME`
+
 List containers
 
 `docker ps`
 
-Commit container changes to docker image
+Commit container changes
 
+`docker commit CONTAINER_NAME`
 
 Stop or kill container
 
@@ -29,6 +34,6 @@ Remove a docker container
 
 ``docker rm CONTAINER_NAME``
 
-to list last used container
+List last used container
 
 ``docker ps -l -q``
