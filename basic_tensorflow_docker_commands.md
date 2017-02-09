@@ -1,4 +1,4 @@
-Pull image, then run and mount drive. The following pulls the latest tensorflow CPU only image
+Pull image, then run and mount drive. The following pulls the latest tensorflow CPU only image and mounts ~/ on the local machine to /root on the docker image
 
 `sudo docker run -it -v ~/:/root -p 8888:8888 gcr.io/tensorflow/tensorflow /bin/bash`
 
@@ -11,8 +11,8 @@ Reattach
 List containers
 `docker ps`
 
-Save state of container
-where CONTAINER_NAME is made up
+Commit container changes to docker image
+
 
 Remove docker containers
 
