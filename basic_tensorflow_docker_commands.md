@@ -1,6 +1,6 @@
 Pull ubuntu image, then run and mount ~/ to /root
 
-`sudo docker run -it -v ~/:/root ubuntu /bin/bash`
+`sudo docker run -it -v ~/repo:/root/repo ubuntu /bin/bash`
 
 Detach
 
