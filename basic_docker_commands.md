@@ -37,3 +37,6 @@
 ### List last used container
 
 ``docker ps -l -q``
+
+### Rename docker container
+``docker rename CONTAINER NEW_NAME``
