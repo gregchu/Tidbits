@@ -40,3 +40,12 @@
 
 ### Rename docker container
 ``docker rename CONTAINER NEW_NAME``
+
+### Remove all dangling volumes
+`docker volume rm $(docker volume ls -qf dangling=true)`
+
+### List images
+`docker images`
+
+### Remove images
+`docker rmi IMAGE_ID`
