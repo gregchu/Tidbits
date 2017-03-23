@@ -1,0 +1,6 @@
+- if when unmounting an ebsvol, you encounter
+  "device is busy.
+        (In some cases useful info about processes that use
+         the device is found by lsof(8) or fuser(1))"
+  try lsof | grep MOUNT_DIR
+  to identify processes that are blocking the umount, then kill those processes
