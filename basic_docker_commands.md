@@ -53,12 +53,12 @@
 ### Nvidia-docker
 edit Dockerfile s.t. contains:
 ```
-FROM nvidia/cuda:8.0-runtime-ubuntu16.04
+FROM nvidia/cuda:8.0-devel-ubuntu16.04
 ```
 then run:
 ```
 sudo docker build -t $IMAGE_NAME - < Dockerfile
-sudo nvidia-docker run -it $IMAGE_NAME
+sudo nvidia-docker run -it -v /home/gchu/mnt:/root/ $IMAGE_NAME /bin/bash
 ```
 
 
